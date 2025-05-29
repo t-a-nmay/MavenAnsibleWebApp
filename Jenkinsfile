@@ -31,7 +31,7 @@ pipeline {
 
         stage('Deploy') {
             steps {
-                sh 'ansible-playbook ansible/playbook.yml -i ansible/hosts.ini'
+                sh 'ansible-playbook /home/tanmay/Desktop/internal/MavenAnsibleWebApp/ansible/playbook.yml -i /home/tanmay/Desktop/internal/MavenAnsibleWebApp/ansible/hosts.ini'
             }
         }
     }
